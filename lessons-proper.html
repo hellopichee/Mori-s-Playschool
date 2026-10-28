@@ -8,7 +8,7 @@
 
 <body>
     <div class="header">
-        <img src="media/mori_text_logo.svg" alt="Mori's Playschool">
+        <a href="index.html"><img src="media/mori_text_logo.svg" alt="Mori's Playschool"></a>
 
         <button class="menu-button">
             <img src="media/menu-button.png" alt="">
@@ -52,16 +52,19 @@
     </div>
 
     <div class="lesson-navigation">
+
+        <!-- replace placeholder links -->
+
         <div class="next-lesson">
             <p>Next Lesson</p>
-            <button class="next">
+            <button class="next" onclick="document.location='lessons-proper.html'">
                 <img src="media/next.png">
             </button>
         </div>
 
         <div class="previous-lesson">
             <p>Previous Lesson</p>
-            <button class="previous">
+            <button class="previous" onclick="document.location='lessons-proper.html'">
                 <img src="media/previous.png">
             </button>
         </div>

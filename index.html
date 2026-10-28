@@ -9,7 +9,7 @@
 <body>
     <div class="header">
 
-        <img src="media/mori_text_logo.svg" alt="Mori's Playschool">
+        <a href="index.html"><img src="media/mori_text_logo.svg" alt="Mori's Playschool"></a>
 
         <button class="menu-button">
             <img src="media/menu-button.png" alt="">
@@ -24,16 +24,16 @@
 
         <img src="media/hero-image.png" alt="Mori the Monkey lying on their stomach, tablet in hand, with learning symbols floating over their head.">
 
-        <button class="start-learning-now">
+        <button class="start-learning-now" onclick="document.location='lessons-list.html'">
             Start learning now
         </button>
 
-        <button class="down">
-            <img src="media/down.png" alt="">
-        </button>
+        <a href="#previews"><button class="down">
+            <img src="media/down.svg" alt="Down arrow icon">
+        </button></a>
     </div>
 
-    <div class="previews">
+    <div id="previews" class="previews">
         <h2>Mori's Playschool offers...</h2>
 
         <div class="offer-items">
@@ -92,7 +92,7 @@
     <div class="cta">
         <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <button class="see-lessons">
+        <button class="see-lessons" onclick="document.location='lessons-list.html'">
             See all lessons
         </button>
     </div>
