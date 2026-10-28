@@ -42,3 +42,15 @@ h1, h2, h3, p {
 .hero h1, .hero p {
     text-align: center;
 }
+
+.next-lesson, .previous-lesson {
+    display: flex;
+}
+
+.next-lesson {
+    justify-content: right;
+}
+
+.previous-lesson {
+    justify-content: left;
+}
