@@ -96,6 +96,7 @@ button {
     padding: 12px 24px;
 
     width: 75%;
+    max-width: 350px;
     height: auto;
 
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -175,6 +176,8 @@ button {
 
 
     font-size: 1.05rem;
+
+    max-width: 350px;
 }
 
 .offer-items {
@@ -320,6 +323,7 @@ button {
     padding: 12px 24px;
 
     width: 75%;
+    max-width: 350px;
     height: auto;
 
     transition: transform 0.2s ease, background-color 0.2s ease;
