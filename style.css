@@ -66,7 +66,7 @@ button {
     flex-direction: column;
     
     background-color: #fff3e8;
-    padding: 12px;
+    padding: 24px;
 
     margin: 0px;
 
@@ -82,15 +82,16 @@ button {
 .hero img {
     width: 75%;
     height: auto;
+
+    max-width: 450px;
 }
 
 .start-learning-now {
     background-color: #d88227;
-    color: aliceblue;
+    color: white;
 
     border-radius: 24px;
     font-size: 1rem;
-    font-family: Garamond, serif;
 
     padding: 12px 24px;
 
@@ -135,12 +136,30 @@ button {
 }
 
 #previews {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 100px;
 }
 
 .previews h2 {
     text-align: center;
     font-size: 1.5rem;
+}
+
+.cta {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 20px;
+    padding: 100px 52px;
+
+}
+
+.cta p {
+    margin: 0;
+
+
+    font-size: 1.05rem;
 }
 
 .offer-items {
@@ -163,12 +182,16 @@ button {
 
 .offer h3 {
     font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .offer p {
     font-size: 0.95rem;
 
-    line-height: 1.4;;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
 }
 
 .lesson-previews {
@@ -187,13 +210,89 @@ button {
 
 .lesson-cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
 
     width: 100%;
     max-width: 300px;
 
-    gap: 12px;
+    height: 250px;
+
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    
+    border-radius: 20px;
+}
+
+.lesson-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.lesson-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    flex: 0 0 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+.lesson-card img {
+    width: 100%;
+    height: 180px;
+
+
+    object-fit: cover;
+}
+
+.lesson-card p {
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    background-color: #e5e5e5;
+    
+    text-align: center;
+
+    padding: 16px;
+    margin: 0;
+    
+    
+}
+
+.carousel-dots {
+    display: flex;
+
+    margin-top: 12px;
+    
+    justify-content: center;
+    align-items: center;
+
+    
+
+    gap: 8px;
+}
+
+.dot {
+    display: inline-block;
+    background-color: #9eb57a;
+
+    width: 8px;
+    height: 8px;
+    
+    border-radius: 50%;
+
+    
+    transition: background-color 0.2s ease;
+}
+
+.dot.active {
+    background-color: #655c24; /* Active dark olive dot */
 }
 
 .see-lessons {
@@ -202,7 +301,6 @@ button {
 
     border-radius: 24px;
     font-size: 1rem;
-    font-family: Garamond, serif;
 
     padding: 12px 24px;
 
@@ -290,6 +388,8 @@ button {
 .footer img {
     width: 20%;
     height: auto;
+
+    max-width: 100px;
 }
 
 .footer-text {
