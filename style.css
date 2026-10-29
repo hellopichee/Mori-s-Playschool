@@ -106,20 +106,35 @@ button {
     background-color: #c4731f;
 }
 
+@keyframes bob {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+}
+
 .down {
     padding: 8px;
     border-radius: 50%;
     
     background: transparent;
     transition: transform 0.2s ease;
+
+
+    animation: bob 1.5s ease-in-out infinite;
 }
 
 .down:hover {
-    transform: translateY(4px);
+    animation-duration: 0.8s;
 }
 
 .down img {
     width: 24px;
+    
+
+    display: block;
 }
 
 .previews {
