@@ -659,6 +659,12 @@ button {
 
 .previous-lesson button {
     order: -1;
+    rotate: 90deg;
+}
+
+.next-lesson button {
+    order: -1;
+    rotate: -90deg;
 }
 
 .next-lesson button, .previous-lesson button {
