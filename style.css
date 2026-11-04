@@ -41,8 +41,11 @@ button {
     top: 0;
     z-index: 100;
 
-    background-color: #655c24;
-    padding: 12px 12px;
+    background-image: url('media/backgrounds/nav-bar-bg.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 12px 12px 48px 12px;
 }
 
 .header img {
@@ -58,6 +61,15 @@ button {
 .menu-button {
     grid-column: 3;
     justify-self: right;
+
+    background-color: #fff3e8;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+.menu-button img {
+    width: 30px;
+    height: 30px;
 }
 
 .hero {
@@ -139,7 +151,14 @@ button {
 }
 
 .previews {
-    background-color: #9eb57a;
+    border-top: 30vw solid transparent;
+
+    background-image: url('media/backgrounds/green-background-edge.png'), url('media/backgrounds/green-background-middle.png');
+    background-size: 100% 30vw, 100% auto;
+    background-repeat: no-repeat, repeat-y;
+    background-position: top center, top center;
+    background-origin: border-box, padding-box;
+    background-clip: border-box, padding-box;
 
     padding: 32px 16px;
 
@@ -148,7 +167,6 @@ button {
     align-items: center;
 
     gap: 36px;
-
 }
 
 #previews {
@@ -212,6 +230,14 @@ button {
     padding: 0;
 }
 
+.offer img {
+    width: 120px; 
+    height: 120px; 
+
+    border-radius: 50%; 
+    background-color: #d9d9d9;
+}
+
 .lesson-previews {
     display: flex;
     flex-direction: column;
@@ -261,10 +287,11 @@ button {
     overflow: hidden;
 }
 
-.lesson-card img {
+.lesson-card img, .lessons-list-card img {
     width: 100%;
     height: 180px;
 
+    background-color: #d9d9d9;
 
     object-fit: cover;
 }
@@ -348,6 +375,8 @@ button {
 }
 
 .lessons-list img {
+    height: 240px;
+
     width: 75%;
     max-width: 240px;
     height: auto;
@@ -416,4 +445,11 @@ button {
     flex-direction: row;
 
     gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-size: 100% 100%;
+        padding: 12px 48px 48px 24px;
+    }
 }
