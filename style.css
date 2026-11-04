@@ -628,6 +628,23 @@ button {
     padding: 0 12px 0 12px;
 }
 
+.correct-answer:focus {
+    background-color: #9eb57a;
+}
+
+.wrong-answer:focus {
+    animation: horizontal-shaking .5s ease-in-out;
+    background-color: #C2584B;
+}
+
+@keyframes horizontal-shaking {
+ 0% { transform: translateX(0) }
+ 25% { transform: translateX(5px) }
+ 50% { transform: translateX(-5px) }
+ 75% { transform: translateX(5px) }
+ 100% { transform: translateX(0) }
+}
+
 .lesson-navigation {
     background-color: #fff3e8;
 
