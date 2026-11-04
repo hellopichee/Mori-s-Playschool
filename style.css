@@ -70,6 +70,7 @@ button {
 .menu-button img {
     width: 30px;
     height: 30px;
+
 }
 
 .hero {
@@ -151,22 +152,36 @@ button {
 }
 
 .previews {
-    border-top: 30vw solid transparent;
+    border-top: 23vw solid transparent;
 
-    background-image: url('media/backgrounds/green-background-edge.png'), url('media/backgrounds/green-background-middle.png');
-    background-size: 100% 30vw, 100% auto;
-    background-repeat: no-repeat, repeat-y;
-    background-position: top center, top center;
-    background-origin: border-box, padding-box;
-    background-clip: border-box, padding-box;
+    background-image: linear-gradient(to bottom, rgba(150, 163, 123, 0), #96a37b 12vw), url('media/backgrounds/green-background-edge.png');
+    background-size: 100% 100%, 100% auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, center -30vw;
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
 
-    padding: 32px 16px;
+    padding: 32px 16px 6vw 16px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     gap: 36px;
+}
+
+
+.background-bottom-edge {
+    height: 23vw;
+    flex-shrink: 0;
+    margin-top: 0px;
+
+    background-image: url('media/backgrounds/green-background-edge.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center -30vw;
+
+    rotate: 180deg;
 }
 
 #previews {
