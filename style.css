@@ -843,6 +843,11 @@ button {
         overflow: visible;
     }
 
+    .lesson-cards a {
+        text-decoration-line: none;
+        color: black;
+    }
+
     .lesson-card {
         height: 250px;
     }
