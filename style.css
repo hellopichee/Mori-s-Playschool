@@ -7,6 +7,8 @@
 html {
     background-color: #fff3e8;
     scroll-behavior: smooth;
+
+    font-size: 18px;
 }
 
 html, body {
