@@ -640,9 +640,232 @@ button {
     gap: 40px;
 }
 
+.nav-links {
+    display: none;
+}
+
+.extra-card {
+    display: none;
+}
+
 @media (min-width: 768px) {
+
     .header {
-        background-size: 100% 100%;
-        padding: 12px 48px 48px 24px;
+        padding: 16px 40px 60px 40px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        grid-column: 3;
+        justify-self: right;
+        gap: 32px;
+    }
+
+    .nav-links a {
+        color: #fff3e8;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto auto 1fr auto;
+        column-gap: 60px;
+        row-gap: 16px;
+        padding: 40px 80px;
+    }
+
+    .hero h1 {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        font-size: 3rem;
+    }
+
+    .hero p {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .start-learning-now {
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: start;
+        width: 300px;
+        margin-top: 32px;
+    }
+
+    .hero > img {
+        grid-column: 2;
+        grid-row: 1 / 6;
+        justify-self: center;
+        width: 100%;
+        max-width: 500px;
+        background-color: #d6d7ae;
+        border-radius: 250px 250px 0 0;
+    }
+
+    .hero > a {
+        grid-column: 1 / 3;
+        grid-row: 6;
+        justify-self: center;
+    }
+
+    .offer-items {
+        flex-direction: row;
+        max-width: 900px;
+        gap: 40px;
+    }
+
+    .offer {
+        flex: 1;
+    }
+
+    .lesson-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        max-width: 750px;
+        height: auto;
+        overflow: visible;
+    }
+
+    .lesson-card {
+        height: 250px;
+    }
+
+    .extra-card {
+        display: flex;
+    }
+
+    .carousel-dots {
+        display: none;
+    }
+
+    .cta {
+        width: 80%;
+        max-width: 800px;
+        box-sizing: border-box;
+        margin: 40px auto 80px auto;
+        border-radius: 24px;
+        padding: 60px 52px;
+    }
+
+    .cta p {
+        max-width: 450px;
+    }
+
+    .social-media-icons {
+        width: 60%;
+        max-width: 600px;
+        justify-content: center;
+        border-top: 1px solid #655c24;
+        padding-top: 20px;
+    }
+
+    .lessons-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 15%;
+        column-gap: 40px;
+    }
+
+    .lessons-list > img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        justify-self: start;
+    }
+
+    .lessons-list h1 {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+        align-self: end;
+    }
+
+    .lessons-list > p {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: right;
+        align-self: start;
+    }
+
+    .lessons-list-cards {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .lessons-list-card img {
+        height: 140px;
+    }
+
+    .lesson-intro-card {
+        padding: 60px 24px;
+    }
+
+    .lesson-and-quiz {
+        padding: 40px 25%;
+    }
+
+    .lesson-and-quiz img {
+        height: 300px;
+    }
+
+    .lesson-and-quiz h2 {
+        margin: 24px 0 12px -30px;
+        padding: 8px 40px;
+    }
+
+    .lesson-and-quiz .test-title {
+        margin: 48px 0 16px 0;
+        padding: 0;
+    }
+
+    .lesson-section-two {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        column-gap: 40px;
+        margin-top: 32px;
+    }
+
+    .lesson-section-two img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        height: 400px;
+        margin: 0;
+    }
+
+    .lesson-section-two h2 {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        margin: 24px -30px 12px 0;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .lesson-section-two p {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .lesson-navigation {
+        padding: 8px 25% 40px 25%;
     }
 }
